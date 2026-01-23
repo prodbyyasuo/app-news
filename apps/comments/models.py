@@ -5,7 +5,7 @@ from django.conf import settings
 class Comment(models.Model):
     '''Модель комментария'''
     post = models.ForeignKey(
-        'Post',
+        'main.Post',
         on_delete=models.CASCADE,
         related_name='comments',
     )
